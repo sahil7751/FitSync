@@ -1,0 +1,26 @@
+# Test API Endpoints
+
+## Test Registration
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "test@example.com",
+  "password": "password123",
+  "age": 25,
+  "gender": "male",
+  "height": 175,
+  "weight": 70,
+  "goal": "maintenance",
+  "activityLevel": "moderate"
+}
+
+## Test Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "password123"
+}

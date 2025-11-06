@@ -1,0 +1,206 @@
+/* Admin Dashboard Styles */
+.admin-dashboard {
+  animation: fadeIn 0.5s ease;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+}
+
+.tab:hover {
+  border-color: #2A6EF3;
+  color: #2A6EF3;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #2A6EF3 0%, #1e5bc6 100%);
+  color: white;
+  border-color: #2A6EF3;
+}
+
+.admin-content {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  min-height: 400px;
+}
+
+/* Overview Section */
+.overview-section .stats-grid {
+  margin-bottom: 3rem;
+}
+
+.platform-info {
+  margin-top: 2rem;
+}
+
+.platform-info h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.platform-info > p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.info-card {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #2A6EF3;
+}
+
+.info-card h4 {
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.info-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.admin-table thead {
+  background: #f8f9fa;
+}
+
+.admin-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.admin-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #666;
+}
+
+.admin-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+/* Badges */
+.role-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.role-badge.admin {
+  background: #6C5CE7;
+  color: white;
+}
+
+.role-badge.user {
+  background: #FBE8D3;
+  color: #2A6EF3;
+}
+
+.meal-type-badge,
+.workout-type-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #FBE8D3;
+  color: #2A6EF3;
+  text-transform: capitalize;
+}
+
+.btn-delete {
+  color: #ff6b6b;
+  transition: transform 0.2s;
+}
+
+.btn-delete:hover {
+  transform: scale(1.2);
+  color: #ff4444;
+}
+
+/* Section Headers */
+.users-section h3,
+.meals-section h3,
+.workouts-section h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .admin-table {
+    font-size: 0.85rem;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-content {
+    padding: 1rem;
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .table-container {
+    font-size: 0.8rem;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 0.5rem 0.25rem;
+  }
+}

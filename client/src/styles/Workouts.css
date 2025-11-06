@@ -1,0 +1,137 @@
+/* Workouts Page Styles */
+.workouts-page {
+  animation: fadeIn 0.5s ease;
+}
+
+.workouts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.workout-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.workout-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.workout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.workout-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.workout-icon {
+  font-size: 2rem;
+}
+
+.workout-title h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.workout-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.workout-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.workout-type {
+  background: #FBE8D3;
+  color: #2A6EF3;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.workout-date {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.workout-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.stat-icon {
+  font-size: 1.2rem;
+}
+
+.stat-value {
+  font-weight: 600;
+  color: #2A6EF3;
+  font-size: 0.95rem;
+}
+
+.workout-details {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.workout-details span {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.workout-description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Workout Form */
+.workout-form .form-group {
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .workouts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workout-stats {
+    grid-template-columns: 1fr;
+  }
+}
