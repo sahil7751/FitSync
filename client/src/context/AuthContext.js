@@ -1,8 +1,3 @@
-/**
- * Authentication Context
- * Manages user authentication state across the app
- */
-
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 
