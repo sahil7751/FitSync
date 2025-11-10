@@ -2,6 +2,8 @@
 
 A modern, full-stack web application for tracking workouts, monitoring nutrition, and receiving personalized fitness recommendations. Built with the MERN stack (MongoDB, Express.js, React, Node.js).
 
+Demo Video link - https://drive.google.com/file/d/1N6qESWGi4Yhk2HW9FBkzyyT5Jv6rh541/view?usp=sharing
+
 ## ✨ Features
 
 ### User Features
